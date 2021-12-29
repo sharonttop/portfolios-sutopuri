@@ -365,7 +365,8 @@
         var controller = new ScrollMagic.Controller();
 
         var scene1 = new ScrollMagic.Scene({
-            triggerElement:'member-warp'
+            triggerElement:'member-warp',
+            reverse:false ,
         })
         .setClassToggle('.member-warp','bounceInDown')
         // animate__backInRight
@@ -404,7 +405,8 @@
             triggerElement:'buy-title',
             triggerHook: 0.9, 
             duration: "80%",
-            offset: 50
+            offset: 50 ,
+            reverse:false ,
         })
         .setClassToggle('.buy-title','fadeInUp')
         .addTo(controller);
@@ -413,7 +415,8 @@
             triggerElement:'buy-item',
             triggerHook: 0.9, 
             duration: "80%",
-            offset: 50
+            offset: 50 ,
+            reverse:false ,
         })
         .setClassToggle('.buy-item','fadeInUp')
         .addTo(controller);
