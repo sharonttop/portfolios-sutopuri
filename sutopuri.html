@@ -349,6 +349,9 @@
             margin-top: 20px;
             margin-bottom: 30px;
         }
+        .news-button:hover{
+            opacity: 0.8;
+        }
         .ichigo>img{
             margin-top: 5px;
             /* height: 100%; */
@@ -387,6 +390,9 @@
             height: 100%;
             object-fit: cover;
         }
+        .icon-tw>img:hover,.icon-ig>img:hover,.icon-yo>img:hover{
+            opacity: 0.8;
+        }
         .customer-service>ul{
             /* margin-top: 30px; */
             margin: 20px;
@@ -404,6 +410,9 @@
         .customer-service>ul>li>a{
             text-decoration: none;
             color: #ff4f60;
+        }
+        .customer-service>ul>li>a:hover{
+            opacity: 0.8;
         }
         .copyright>p{
             color: #ff4f60;
@@ -621,7 +630,7 @@
             triggerHook: 0.9, 
             duration: "100%",
             offset: 100 ,
-            // reverse:false ,
+            reverse:false ,
         })
         .setClassToggle('.news-title','fadeInUp')
         .addTo(controller);
@@ -631,7 +640,7 @@
             triggerHook:0.9, 
             duration: "100%",
             offset: 100 ,
-            // reverse:false ,
+            reverse:false ,
         })
         .setClassToggle('.news-box','fadeInUp')
         .addTo(controller);
